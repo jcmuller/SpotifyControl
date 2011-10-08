@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>https://github.com/jcmuller/PianobarControl</string>
 	<key>CFBundleIconFile</key>
-	<string>PianobarControl.icns</string>
+	<string>SpotifyControl</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.the-code.PianobarControl</string>
 	<key>CFBundleInfoDictionaryVersion</key>

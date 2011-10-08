@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* PianobarControlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PianobarControlAppDelegate.m */; };
+		5C3AB7951323151400D09BF3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3AB7941323151400D09BF3 /* Carbon.framework */; };
+		5C5F379E1337D93C00BD1208 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F379D1337D93C00BD1208 /* NSString+Levenshtein.m */; };
+		5C5F37FE1337DEAF00BD1208 /* NSArray+customSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F37FD1337DEAF00BD1208 /* NSArray+customSort.m */; };
+		5C91A2641322D04400F2E054 /* SpotifyControl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A2631322D04400F2E054 /* SpotifyControl.icns */; };
+		5C91A26C1322D18E00F2E054 /* pandora-logo-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A26B1322D18E00F2E054 /* pandora-logo-16.png */; };
+		5C91A3111322E1E000F2E054 /* thumbs_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A30F1322E1E000F2E054 /* thumbs_down.png */; };
+		5C91A3121322E1E000F2E054 /* thumbs_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A3101322E1E000F2E054 /* thumbs_up.png */; };
+		5C91A31A1322E38F00F2E054 /* media_play_pause_resume.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A3151322E38F00F2E054 /* media_play_pause_resume.png */; };
+		5C91A31B1322E38F00F2E054 /* media_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A3161322E38F00F2E054 /* media_next.png */; };
+		5C91A31C1322E38F00F2E054 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A3171322E38F00F2E054 /* information.png */; };
+		5C91A31E1322E38F00F2E054 /* view_choose.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A3191322E38F00F2E054 /* view_choose.png */; };
+		5C91A3491322E55800F2E054 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C91A3481322E55800F2E054 /* exit.png */; };
+		5CB00E541428393600DBB65E /* pandora-logo-16_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB00E531428393600DBB65E /* pandora-logo-16_gray.png */; };
+		5CBD99DF1413C1C000FEA63D /* JMSongInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD99DE1413C1C000FEA63D /* JMSongInfoParser.m */; };
+		5CC94C741440B8D80053F8EF /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C5C1440B8D80053F8EF /* NSObject+SBJson.m */; };
+		5CC94C751440B8D80053F8EF /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C5F1440B8D80053F8EF /* SBJsonParser.m */; };
+		5CC94C761440B8D80053F8EF /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C611440B8D80053F8EF /* SBJsonStreamParser.m */; };
+		5CC94C771440B8D80053F8EF /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C631440B8D80053F8EF /* SBJsonStreamParserAccumulator.m */; };
+		5CC94C781440B8D80053F8EF /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C651440B8D80053F8EF /* SBJsonStreamParserAdapter.m */; };
+		5CC94C791440B8D80053F8EF /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C671440B8D80053F8EF /* SBJsonStreamParserState.m */; };
+		5CC94C7A1440B8D80053F8EF /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C691440B8D80053F8EF /* SBJsonStreamWriter.m */; };
+		5CC94C7B1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C6B1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.m */; };
+		5CC94C7C1440B8D80053F8EF /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C6D1440B8D80053F8EF /* SBJsonStreamWriterState.m */; };
+		5CC94C7D1440B8D80053F8EF /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C6F1440B8D80053F8EF /* SBJsonTokeniser.m */; };
+		5CC94C7E1440B8D80053F8EF /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C711440B8D80053F8EF /* SBJsonUTF8Stream.m */; };
+		5CC94C7F1440B8D80053F8EF /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94C731440B8D80053F8EF /* SBJsonWriter.m */; };
+		5CE4A76213251D4D00A332C4 /* PianobarControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4A76113251D4D00A332C4 /* PianobarControlModel.m */; };
+		5CF2990513241B8500704EB8 /* NSAttributedString+Hyperlink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2990413241B8500704EB8 /* NSAttributedString+Hyperlink.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* PianobarControlAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianobarControlAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* PianobarControlAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianobarControlAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* SpotifyControl_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyControl_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5C3AB7941323151400D09BF3 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		5C5F379C1337D93C00BD1208 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Levenshtein.h"; sourceTree = "<group>"; };
+		5C5F379D1337D93C00BD1208 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Levenshtein.m"; sourceTree = "<group>"; };
+		5C5F37FC1337DEAF00BD1208 /* NSArray+customSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+customSort.h"; sourceTree = "<group>"; };
+		5C5F37FD1337DEAF00BD1208 /* NSArray+customSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+customSort.m"; sourceTree = "<group>"; };
+		5C91A2631322D04400F2E054 /* SpotifyControl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SpotifyControl.icns; sourceTree = "<group>"; };
+		5C91A26B1322D18E00F2E054 /* pandora-logo-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pandora-logo-16.png"; sourceTree = "<group>"; };
+		5C91A30F1322E1E000F2E054 /* thumbs_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbs_down.png; sourceTree = "<group>"; };
+		5C91A3101322E1E000F2E054 /* thumbs_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbs_up.png; sourceTree = "<group>"; };
+		5C91A3151322E38F00F2E054 /* media_play_pause_resume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = media_play_pause_resume.png; sourceTree = "<group>"; };
+		5C91A3161322E38F00F2E054 /* media_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = media_next.png; sourceTree = "<group>"; };
+		5C91A3171322E38F00F2E054 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		5C91A3191322E38F00F2E054 /* view_choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_choose.png; sourceTree = "<group>"; };
+		5C91A3481322E55800F2E054 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		5CB00E531428393600DBB65E /* pandora-logo-16_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pandora-logo-16_gray.png"; sourceTree = "<group>"; };
+		5CBD99DD1413C1C000FEA63D /* JMSongInfoParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSongInfoParser.h; sourceTree = "<group>"; };
+		5CBD99DE1413C1C000FEA63D /* JMSongInfoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSongInfoParser.m; sourceTree = "<group>"; };
+		5CC94C5B1440B8D80053F8EF /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		5CC94C5C1440B8D80053F8EF /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		5CC94C5D1440B8D80053F8EF /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		5CC94C5E1440B8D80053F8EF /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		5CC94C5F1440B8D80053F8EF /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		5CC94C601440B8D80053F8EF /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		5CC94C611440B8D80053F8EF /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		5CC94C621440B8D80053F8EF /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		5CC94C631440B8D80053F8EF /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		5CC94C641440B8D80053F8EF /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		5CC94C651440B8D80053F8EF /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		5CC94C661440B8D80053F8EF /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		5CC94C671440B8D80053F8EF /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		5CC94C681440B8D80053F8EF /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		5CC94C691440B8D80053F8EF /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		5CC94C6A1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		5CC94C6B1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		5CC94C6C1440B8D80053F8EF /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		5CC94C6D1440B8D80053F8EF /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		5CC94C6E1440B8D80053F8EF /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		5CC94C6F1440B8D80053F8EF /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		5CC94C701440B8D80053F8EF /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		5CC94C711440B8D80053F8EF /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		5CC94C721440B8D80053F8EF /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		5CC94C731440B8D80053F8EF /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		5CE4A76013251D4D00A332C4 /* PianobarControlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianobarControlModel.h; sourceTree = "<group>"; };
+		5CE4A76113251D4D00A332C4 /* PianobarControlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianobarControlModel.m; sourceTree = "<group>"; };
+		5CF2990313241B8500704EB8 /* NSAttributedString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Hyperlink.h"; sourceTree = "<group>"; };
+		5CF2990413241B8500704EB8 /* NSAttributedString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Hyperlink.m"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* SpotifyControl-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpotifyControl-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* SpotifyControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				5C3AB7951323151400D09BF3 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* PianobarControlAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* PianobarControlAppDelegate.m */,
+				5CE4A76013251D4D00A332C4 /* PianobarControlModel.h */,
+				5CE4A76113251D4D00A332C4 /* PianobarControlModel.m */,
+				5CBD99DD1413C1C000FEA63D /* JMSongInfoParser.h */,
+				5CBD99DE1413C1C000FEA63D /* JMSongInfoParser.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				5C3AB7941323151400D09BF3 /* Carbon.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SpotifyControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PianobarControl */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				5CF2990213241B6600704EB8 /* Categories */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				5CC94C5A1440B8D80053F8EF /* SBJson */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PianobarControl;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* SpotifyControl_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C91A3031322E0FC00F2E054 /* Icons */,
+				5C91A3021322E0EF00F2E054 /* Images */,
+				8D1107310486CEB800E47090 /* SpotifyControl-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C91A3021322E0EF00F2E054 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5CB00E531428393600DBB65E /* pandora-logo-16_gray.png */,
+				5C91A3481322E55800F2E054 /* exit.png */,
+				5C91A3151322E38F00F2E054 /* media_play_pause_resume.png */,
+				5C91A3161322E38F00F2E054 /* media_next.png */,
+				5C91A3171322E38F00F2E054 /* information.png */,
+				5C91A3191322E38F00F2E054 /* view_choose.png */,
+				5C91A30F1322E1E000F2E054 /* thumbs_down.png */,
+				5C91A3101322E1E000F2E054 /* thumbs_up.png */,
+				5C91A26B1322D18E00F2E054 /* pandora-logo-16.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5C91A3031322E0FC00F2E054 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5C91A2631322D04400F2E054 /* SpotifyControl.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		5CC94C5A1440B8D80053F8EF /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				5CC94C5B1440B8D80053F8EF /* NSObject+SBJson.h */,
+				5CC94C5C1440B8D80053F8EF /* NSObject+SBJson.m */,
+				5CC94C5D1440B8D80053F8EF /* SBJson.h */,
+				5CC94C5E1440B8D80053F8EF /* SBJsonParser.h */,
+				5CC94C5F1440B8D80053F8EF /* SBJsonParser.m */,
+				5CC94C601440B8D80053F8EF /* SBJsonStreamParser.h */,
+				5CC94C611440B8D80053F8EF /* SBJsonStreamParser.m */,
+				5CC94C621440B8D80053F8EF /* SBJsonStreamParserAccumulator.h */,
+				5CC94C631440B8D80053F8EF /* SBJsonStreamParserAccumulator.m */,
+				5CC94C641440B8D80053F8EF /* SBJsonStreamParserAdapter.h */,
+				5CC94C651440B8D80053F8EF /* SBJsonStreamParserAdapter.m */,
+				5CC94C661440B8D80053F8EF /* SBJsonStreamParserState.h */,
+				5CC94C671440B8D80053F8EF /* SBJsonStreamParserState.m */,
+				5CC94C681440B8D80053F8EF /* SBJsonStreamWriter.h */,
+				5CC94C691440B8D80053F8EF /* SBJsonStreamWriter.m */,
+				5CC94C6A1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.h */,
+				5CC94C6B1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.m */,
+				5CC94C6C1440B8D80053F8EF /* SBJsonStreamWriterState.h */,
+				5CC94C6D1440B8D80053F8EF /* SBJsonStreamWriterState.m */,
+				5CC94C6E1440B8D80053F8EF /* SBJsonTokeniser.h */,
+				5CC94C6F1440B8D80053F8EF /* SBJsonTokeniser.m */,
+				5CC94C701440B8D80053F8EF /* SBJsonUTF8Stream.h */,
+				5CC94C711440B8D80053F8EF /* SBJsonUTF8Stream.m */,
+				5CC94C721440B8D80053F8EF /* SBJsonWriter.h */,
+				5CC94C731440B8D80053F8EF /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			path = json/Classes;
+			sourceTree = "<group>";
+		};
+		5CF2990213241B6600704EB8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2990313241B8500704EB8 /* NSAttributedString+Hyperlink.h */,
+				5CF2990413241B8500704EB8 /* NSAttributedString+Hyperlink.m */,
+				5C5F379C1337D93C00BD1208 /* NSString+Levenshtein.h */,
+				5C5F379D1337D93C00BD1208 /* NSString+Levenshtein.m */,
+				5C5F37FC1337DEAF00BD1208 /* NSArray+customSort.h */,
+				5C5F37FD1337DEAF00BD1208 /* NSArray+customSort.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SpotifyControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SpotifyControl" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotifyControl;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PianobarControl;
+			productReference = 8D1107320486CEB800E47090 /* SpotifyControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpotifyControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PianobarControl */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SpotifyControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				5C91A2641322D04400F2E054 /* SpotifyControl.icns in Resources */,
+				5C91A26C1322D18E00F2E054 /* pandora-logo-16.png in Resources */,
+				5C91A3111322E1E000F2E054 /* thumbs_down.png in Resources */,
+				5C91A3121322E1E000F2E054 /* thumbs_up.png in Resources */,
+				5C91A31A1322E38F00F2E054 /* media_play_pause_resume.png in Resources */,
+				5C91A31B1322E38F00F2E054 /* media_next.png in Resources */,
+				5C91A31C1322E38F00F2E054 /* information.png in Resources */,
+				5C91A31E1322E38F00F2E054 /* view_choose.png in Resources */,
+				5C91A3491322E55800F2E054 /* exit.png in Resources */,
+				5CB00E541428393600DBB65E /* pandora-logo-16_gray.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* PianobarControlAppDelegate.m in Sources */,
+				5CF2990513241B8500704EB8 /* NSAttributedString+Hyperlink.m in Sources */,
+				5CE4A76213251D4D00A332C4 /* PianobarControlModel.m in Sources */,
+				5C5F379E1337D93C00BD1208 /* NSString+Levenshtein.m in Sources */,
+				5C5F37FE1337DEAF00BD1208 /* NSArray+customSort.m in Sources */,
+				5CBD99DF1413C1C000FEA63D /* JMSongInfoParser.m in Sources */,
+				5CC94C741440B8D80053F8EF /* NSObject+SBJson.m in Sources */,
+				5CC94C751440B8D80053F8EF /* SBJsonParser.m in Sources */,
+				5CC94C761440B8D80053F8EF /* SBJsonStreamParser.m in Sources */,
+				5CC94C771440B8D80053F8EF /* SBJsonStreamParserAccumulator.m in Sources */,
+				5CC94C781440B8D80053F8EF /* SBJsonStreamParserAdapter.m in Sources */,
+				5CC94C791440B8D80053F8EF /* SBJsonStreamParserState.m in Sources */,
+				5CC94C7A1440B8D80053F8EF /* SBJsonStreamWriter.m in Sources */,
+				5CC94C7B1440B8D80053F8EF /* SBJsonStreamWriterAccumulator.m in Sources */,
+				5CC94C7C1440B8D80053F8EF /* SBJsonStreamWriterState.m in Sources */,
+				5CC94C7D1440B8D80053F8EF /* SBJsonTokeniser.m in Sources */,
+				5CC94C7E1440B8D80053F8EF /* SBJsonUTF8Stream.m in Sources */,
+				5CC94C7F1440B8D80053F8EF /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpotifyControl_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SpotifyControl-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = SpotifyControl;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpotifyControl_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SpotifyControl-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = SpotifyControl;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SpotifyControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpotifyControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
